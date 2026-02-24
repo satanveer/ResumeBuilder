@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author: Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that the generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-15pt}
+
+\begin{center}
+    \vspace{15pt}
+    \textbf{\Huge \scshape Tanveer Singh} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/satanveer}{\underline{github}} $  $
+    \faIcon{code}
+    \href{https://www.satanveer.tech/}
+    {\underline{satanveer.tech}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/tanveer-singh-2b9948284/}{\underline{linkedin}} $  $
+    \faIcon{envelope}
+    \href{mailto:satanveersingh@gmail.com}
+    {\underline{satanveersingh@gmail.com}}
+\end{center}
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Fidelity International} $|$ \footnotesize\emph{Software Developer Intern }\vspace{8pt}}{Jan 2025 -- Jul 2025}
+          \begin{itemize}
+              \item {\small{Contributed to the GDS React Components Library, resolving 50+ UI/UX and Functional bugs, improving component adoption across 70+ teams}}
+              \item {\small{Utilized Playwright, Jest, React.js, Styled Components, and Storybook to implement comprehensive testing, documentation, and refinement of front-end components, achieving 100 percent test coverage and accelerating component deployment cycles.}}
+              \item {\small{Identified and fixed numerous UI/UX bugs, leading to a more polished and reliable component library utilized by various teams.}}
+          \end{itemize}
+          
+
+    \resumeSubHeadingListEnd 
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Guru Nanak Dev University (Amritsar, Punjab)}{Aug 2021 - Jul 2025}
+      {B.Tech - Computer Science and Engineering}{Current CGPA: 7.83}
+      
+    \vspace{5pt}
+    
+    \resumeSubheading
+      {Class 10+2 (Central Board of Secondary Education)}{Apr 2020 - Jun 2021}
+      {Heritage School Jammu}{Percentage: 86.0}
+      
+    \vspace{5pt}
+    
+    \resumeSubheading
+      {Class 10 (Central Board of Secondary Education)}{Apr 2018 - Jun 2019}
+      {Heritage School Jammu}{Percentage: 90.0}
+
+  \resumeSubHeadingListEnd
+
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{BobbyFlow} $|$ \footnotesize\emph{ReactJs, Appwrite, TypeScript, Google Calendar API, OAuth 2.0}$|$ \href{https://www.bobbyflow.live/} {\underline{link}}}{Aug 2025}
+        \resumeItemListStart
+            \resumeItem{Engineered a comprehensive productivity platform to help users combine Pomodoro techniques with calendar management, addressing the gap between task tracking and calendar visibility.}
+            \resumeItem{Integrated Google Calendar API synchronization enabling bi-directional event syncing, automatic focus session logging, and real-time calendar management with advanced OAuth token refresh handling.}
+             \resumeItem{Implemented advanced productivity features including focus goal tracking, task-timer binding, productivity analytics with visual charts, habit tracking, and customizable Pomodoro settings with audio notifications.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{LLM Powered Cohort Builder} $|$ \footnotesize\emph{React, Python, JavaScript, Flask, SQLite, Gemini} $|$ \href{https://github.com/satanveer/Cohort-Builder} {\underline{link}}}{Dec 2025}
+        \resumeItemListStart
+            \resumeItem{Built an LLM-assisted cohort builder that turns natural-language requests into clarified, parameterized SQL so non-SQL users can self-serve cohort insights.
+}
+            \resumeItem{Added safety and transparency: warnings on ambiguous terms, a debug drawer exposing SQL/params/LLM mode, and deterministic execution over patient/sample data (20-row pagination).}
+          \resumeItemListEnd
+        
+
+
+        \resumeProjectHeading
+        {\textbf{Desi Hatti} $|$ \footnotesize\emph{Spring Boot, React.js, MongoDB, JWT Authentication, REST APIs} $|$ \href{https://dh-fe.vercel.app/} {\underline{link}}}{Mar 2025} \small 
+    
+        
+        \resumeItemListStart
+            \resumeItem{Engineered a scalable property rental platform with role-based access for Customers, Landlords, and Admins using Spring Boot, React.js, MongoDB, and JWT authentication.}
+            \resumeItem{Integrated secure property management, advanced search, and landlord verification to streamline rentals and ensure platform integrity.}
+          \resumeItemListEnd
+    
+        
+          
+        
+          
+    \resumeSubHeadingListEnd
+
+    % -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, HTML/CSS} \\
+     \vspace{5pt}
+     \textbf{Version Control}{: Git/GitHub}\\
+     \vspace{5pt}
+     \textbf{Frameworks}{: SpringBoot, NextJs, Bootstrap, Tailwind CSS, ReactJs, StyledComponents}\\
+     \vspace{5pt}
+     \textbf{Technologies}{: JWT, Firebase, Appwrite, Google API, REST APIs, Playwright, Selenium, Jest}\\
+     \vspace{5pt}
+     \textbf{Database}{: SQL , MongoDB}
+
+     
+
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+
+\end{document}
