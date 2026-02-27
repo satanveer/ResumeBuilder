@@ -63,7 +63,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Backend runs on `http://localhost:5000`.
+Backend runs on `http://localhost:5001`.
 
 ### 3) Frontend
 
@@ -75,7 +75,7 @@ npm run dev
 
 Frontend runs on `http://localhost:5173`.
 
-If your backend is running on a non-default port (for example `5001` on macOS when `5000` is occupied), set:
+If your backend is running on a non-default port, set:
 
 ```bash
 VITE_API_BASE_URL=http://localhost:5001
